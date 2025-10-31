@@ -1,17 +1,17 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "RITHISH KANNAN - Portfolio CLI",
+  "name": "Rithish Kannan",
+  "ascii": "RITHISH CLI",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "https://github.com/BlackEag1e",
+    "linkedin": "https://www.linkedin.com/in/rithish-k-968105268/"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "email": "rithishk2003@gmail.com",
+  "ps1_hostname": "iamrithish",
+  "ps1_username": "guest",
+  "repo": "https://github.com/BlackEag1e/CLI-Portfolio",
+  "resume_url": "https://drive.google.com/file/d/1UCrBcoxdVvxCi7mjoSNXrpk61gerCD4k/view?usp=sharing",
   "donate_urls": {
     "paypal": "https://paypal.me/cveinnt",
     "patreon": "https://patreon.com/cveinnt"

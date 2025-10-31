@@ -6,19 +6,6 @@ With this project, you can showcase your portfolio **in a fun, professional, and
 ------
 
 
-## 📸 Showcase
-
-<p align="center">
-<img src="./demo/demo.gif" width="600"><br>
-<strong>LiveTerm with different themes</strong>
-</p>
-
-<p align="center">
-<img src="./demo/cveinnt.png" width="600"><br>
-<strong><a href="https://cveinnt.com" target=_blank>my personal website</a></strong>
-</p>
-
-
 This CLI requires the `yarn` package manager. You can install `yarn` [here](https://classic.yarnpkg.com/lang/en/docs/install/).
 
 Start editing `config.json` and try saving and see the updated changes!

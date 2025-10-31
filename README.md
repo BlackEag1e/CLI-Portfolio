@@ -1,17 +1,10 @@
-# [💻 LiveTerm - build terminal styled websites in minutes!](https://liveterm.vercel.app)
+Welcome to my **CLI Portfolio**, a terminal-styled interactive website built using **Next.js**.  
+This is a fully customizable portfolio template, where you can explore my skills, projects, certifications, and contact details in a terminal-style interface.
 
-Highly customizable, easy-to-use, and minimal terminal styled website template, powered by Next.js.
+With this project, you can showcase your portfolio **in a fun, professional, and minimal way**, using just the `config.json` file to configure your details.
 
-Building a simple website with LiveTerm only takes **minutes**, and you only need to work with **one** file: `config.json`. After you cloned this repository, simply run `yarn install && yarn dev` and start editing `config.json` to build your website!
+------
 
-LiveTerm can be used to build a variety of websites:
-
-- [personal website](https://cveinnt.com)
-- [browser startpage](https://livetermstart.vercel.app/)
-- [project page](https://liveterm.vercel.app/)
-- or maybe just a cool browser music player...be creative!
-
-Feel free to play with the web demo above!
 
 ## 📸 Showcase
 
@@ -25,28 +18,16 @@ Feel free to play with the web demo above!
 <strong><a href="https://cveinnt.com" target=_blank>my personal website</a></strong>
 </p>
 
-## 🚀 Ship your LiveTerm site in less than 5 minutes
 
-LiveTerm requires the `yarn` package manager. You can install `yarn` [here](https://classic.yarnpkg.com/lang/en/docs/install/).
-
-Simply run the following commmand in your terminal:
-
-```bash
-sh -c "$(curl -fsSL https://raw.github.com/Cveinnt/LiveTerm/main/install/install.sh)"
-```
-
-This will install LiveTerm to the current directory. You can start building your website with:
-
-```bash
-cd LiveTerm && yarn dev
-```
+This CLI requires the `yarn` package manager. You can install `yarn` [here](https://classic.yarnpkg.com/lang/en/docs/install/).
 
 Start editing `config.json` and try saving and see the updated changes!
 
 Alternatively, you can clone this repository to a location of your choosing
 
 ```bash
-git clone https://github.com/Cveinnt/LiveTerm.git && cd LiveTerm
+git clone https://github.com/BlackEag1e/CLI-Portfolio.git
+cd CLI-Portfolio
 ```
 
 Then install dependencies and start developing there:

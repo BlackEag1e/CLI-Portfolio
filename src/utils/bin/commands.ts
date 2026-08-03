@@ -22,155 +22,112 @@ Type 'sumfetch' to display summary.
 `;
 };
 
-// // Redirection
-// export const repo = async (args: string[]): Promise<string> => {
-//   window.open(`${config.repo}`);
-//   return 'Opening Github repository...';
-// };
-
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hey, you made it here! You must be interested in me then…
-I'm ${config.name}, passionate about Networking, Cloud, and DevOps.
-I design secure, scalable systems and automate processes to make life easier.
-Hands-on with Python, network engineering, and cloud platforms.
-If it’s infrastructure, automation, or DevOps—count me in!`;
+  return `Hey, you made it here! Glad you're interested in my work.
+
+I'm ${config.name}, an AWS Cloud & DevOps Engineer with hands-on experience designing
+and deploying secure, scalable cloud infrastructure for enterprise clients.
+
+Skilled in cloud architecture, Infrastructure as Code (Terraform), DevOps automation,
+and cost optimization. I've collaborated with 20+ clients on requirement gathering,
+architecture design, and migrations.
+
+Strong expertise across AWS, Linux, Python, and containerized deployments.
+If it's cloud, infrastructure, or automation — count me in!`;
 };
-
-// export const resume = async (args: string[]): Promise<string> => {
-//   window.open(`${config.resume_url}`);
-//   return 'Opening resume...';
-// };
-
-// // Donate
-// export const donate = async (args: string[]): Promise<string> => {
-//   return `thank you for your interest. 
-// here are the ways you can support my work:
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-// `;
-// };
-
-// Contact
-// export const email = async (args: string[]): Promise<string> => {
-//   window.open(`mailto:${config.email}`);
-//   return `Opening mailto:${config.email}...`;
-// };
-
-// export const github = async (args: string[]): Promise<string> => {
-//   window.open(`https://www.linkedin.com/in/rithish-k-968105268/`);
-
-//   return 'Opening github...';
-// };
 
 export const contact = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`)
-  window.open(`https://www.linkedin.com/in/rithish-k-968105268/`)
-  window.open(`https://github.com/BlackEag1e`);
+  return `CONTACT
 
-  return 'Opening contact...';
-  };
-
-// // Search
-// export const google = async (args: string[]): Promise<string> => {
-//   window.open(`https://google.com/search?q=${args.join(' ')}`);
-//   return `Searching google for ${args.join(' ')}...`;
-// };
-
-// export const duckduckgo = async (args: string[]): Promise<string> => {
-//   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-//   return `Searching duckduckgo for ${args.join(' ')}...`;
-// };
-
-// export const bing = async (args: string[]): Promise<string> => {
-//   window.open(`https://bing.com/search?q=${args.join(' ')}`);
-//   return `Wow, really? You are using bing for ${args.join(' ')}?`;
-// };
-
-// export const reddit = async (args: string[]): Promise<string> => {
-//   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-//   return `Searching reddit for ${args.join(' ')}...`;
-// };
-
-// Typical linux commands
-// export const echo = async (args: string[]): Promise<string> => {
-//   return args.join(' ');
-// };
-
-// export const whoami = async (args: string[]): Promise<string> => {
-//   return `${config.ps1_username}`;
-// };
+Email:    <u><a class="text-light-blue dark:text-dark-blue underline" href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+LinkedIn: <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.social.linkedin}" target="_blank">${config.social.linkedin.replace('https://www.', '')}</a></u>
+GitHub:   <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.social.github}" target="_blank">${config.social.github.replace('https://', '')}</a></u>`;
+};
 
 export const certifications = async (args: string[]): Promise<string> => {
-  return `- CCNA - Cisco Certified Network Associate from Cisco | Cisco ID: CSCO14711356
-- ISC2 Certified in Cybersecurity course completion from (ISC)2 
-- Python Essentials 1,2 from cisco networking academy 
-- Introduction to cybersecurity and cybersecurity essentials from Cisco `;
+  return `- CCNA – Cisco Certified Network Associate | Cisco ID: CSCO14711356
+- ISC2 Certified in Cybersecurity (CC)
+- AWS Cloud Practitioner
+- Python Essentials 1 & 2 – Cisco Networking Academy
+- Introduction to Cybersecurity & Cybersecurity Essentials – Cisco`;
 };
+
 export const experience = async (args: string[]): Promise<string> => {
   return `EXPERIENCE
-Network Engineer Intern – BREAD FINANCIAL (July 2025 - Present)
-- Handled incidents in ServiceNow, including SSL renewals, IP allocations, and network issues.
-- Automated SSL renewal tasks using Python on Netscaler ADC.
-- Worked on Layer 2 networking tasks like VLANs and switch configurations.
-- Assisted senior engineers with changes and Automation tasks.
 
-NOC Intern - BRILLIO (Mar 2025 - May 2025)
-- Worked as an L1 Network Operations Center (NOC) Engineer, monitoring network health and resolving tickets.
-- Managed incidents using SolarWinds and ServiceNow, ensuring SLA compliance and real-time response.
-- Escalated major issues to L2/L3 teams and contributed to post-incident documentation.
-- Ensured high availability and performance of services through active monitoring and quick remediation.`;
+Cloud & DevOps Engineer – Ancrew Global Services Pvt. Ltd. (Feb 2026 – Present)
+- Designed AWS cloud architectures and deployment strategies for 20+ client engagements.
+- Conducted technical discussions on architecture, scalability, security, and migration strategies.
+- Prepared BOQs, AWS cost estimations, architecture diagrams, and solution documents.
+- Provisioned and managed AWS infrastructure using Terraform (IaC best practices).
+- Executed deployments across dev and production with high availability and security compliance.
+- Automated infrastructure and deployment tasks using Bash and Python.
+- Monitored production workloads with CloudWatch and set up proactive alerting.
+
+Network Engineer Intern – Bread Financial (Jul 2025 – Dec 2025)
+- Deployed Flask applications using Docker on internal servers for SSL monitoring dashboards.
+- Automated SSL certificate renewal workflows using Python on NetScaler ADC (70% less manual effort).
+- Designed custom Grafana and ServiceNow dashboards for real-time infrastructure visibility.
+- Executed 5+ daily change requests for SSL renewals and vendor maintenance (ITIL-aligned).
+- Monitored infrastructure health and supported incident triage during 24/7 operations.`;
 };
+
+export const education = async (args: string[]): Promise<string> => {
+  return `EDUCATION
+
+Sri Eshwar College of Engineering
+B.E. in Electronics and Communication Engineering
+CGPA: 8.4 | 2021 – 2025`;
+};
+
 export const skills = async (args: string[]): Promise<string> => {
-  return `Networking: OSPF, EIGRP, VLAN, ACL, NAT, DHCP, STP, ASA Firewall
-Tools: Wireshark, Nmap, Snort, Splunk, Wazuh, Zabbix, Snipe-IT
-Programming: Python, SQL
-Cloud: AWS (EC2, S3, VPC, IAM)
-Cybersecurity: ISC2 CC, OSINT, AAA, SIEM, Network Security
-DevOps: Linux, Docker, GitHub Actions, CI/CD, Automation`;
+  return `Cloud: AWS (EC2, ECS, Lambda, VPC, Route53, CloudFront, ALB, IAM, S3, RDS,
+       ECR, CloudWatch, KMS, Secrets Manager, SNS, SQS, EventBridge, SSM, STS,
+       Cost Explorer, Amazon Bedrock)
+
+IaC: Terraform, CloudFormation (Basics)
+Containers: Docker, Kubernetes, Amazon ECS
+Automation: Python, Bash
+CI/CD: GitHub Actions, Jenkins, Argo CD, Maven
+Monitoring: CloudWatch, CloudTrail, Grafana, Prometheus
+Databases: MySQL, PostgreSQL, SQLite
+OS: Linux, Windows
+Version Control: Git, GitHub`;
 };
 
 export const projects = async (args: string[]): Promise<string> => {
-  return `1. OSINT Account Verification Tool
-Automated tool to check if emails or phone numbers are linked to online accounts.
-Tech Stack: Python, Selenium, OSINT APIs
+  return `1. Enterprise Cloud Migration & AWS Infrastructure Deployment
+Designed and implemented AWS infrastructure for enterprise clients — greenfield and
+migration projects from on-premises and Azure to AWS with minimal downtime.
+Provisioned VPCs, EC2, IAM, ECS, ECR, RDS, CloudFront, Route53 via Terraform.
+Tech: AWS, Terraform, Docker, ECS, EC2, IAM, VPC, RDS, CloudFront, Route53
 
-2. Network Design and ASA Firewall Implementation
-Designed and configured a multi-layer enterprise network with OSPF, DHCP, VLANs, NAT, and ASA Firewall ACLs.
-Platform: Cisco Packet Tracer
+2. AWS Billing Portal (Internal Product)
+Built an internal portal to centrally manage AWS billing across multiple client accounts.
+Features: Email OTP auth, JWT, RBAC, STS AssumeRole, Cost Explorer API sync, cost trends,
+service-wise billing, forecasts, credits tracking, and exports.
+Tech: FastAPI, Python, React, SQLite, SQLAlchemy, AWS STS, Cost Explorer API, JWT
 
-3. Python Network Scanner
-Script to discover and list active devices on a network.`;
+3. Scalable & Fault-Tolerant Web Application on AWS
+Multi-AZ architecture with ALB and Auto Scaling Groups — 40% availability improvement.
+VPC with public/private subnets, NAT gateways, EC2 behind ALB with horizontal scaling.
+Tech: AWS (VPC, EC2, ALB, Auto Scaling), Terraform`;
+};
+
+export const achievements = async (args: string[]): Promise<string> => {
+  return `HACKATHONS & ACHIEVEMENTS
+
+- Dr. Kalam Young Achiever Award – World Youth Federation (2024)
+- Winner – Epitome'24 Hackathon among 105 teams, GRIET Hyderabad (Rs. 20,000)
+- Finalist – Smart India Hackathon, Government of India
+- Finalist – Top 8 out of 800 teams, MIT Manipal Hackathon
+- Top 5 – Final Round Idea Pitching, NIT Trichy`;
 };
 
 export const quote = async (args: string[]): Promise<string> => {
-  return `Sometimes what you want is a wish, what you get is a blessing. Trust God’s timing and wisdom.`;
+  return `Sometimes what you want is a wish, what you get is a blessing. Trust God's timing and wisdom.`;
 };
-
-// export const date = async (args: string[]): Promise<string> => {
-//   return new Date().toString();
-// };
-
-// export const vi = async (args: string[]): Promise<string> => {
-//   return `woah, you still use 'vi'? just try 'vim'.`;
-// };
-
-// export const vim = async (args: string[]): Promise<string> => {
-//   return `'vim' is so outdated. how about 'nvim'?`;
-// };
-
-// export const nvim = async (args: string[]): Promise<string> => {
-//   return `'nvim'? too fancy. why not 'emacs'?`;
-// };
-
-// export const emacs = async (args?: string[]): Promise<string> => {
-//   return `you know what? just use vscode.`;
-// };
-
-// export const sudo = async (args?: string[]): Promise<string> => {
-//   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-//   return `Permission denied: with little power comes... no responsibility? `;
-// };
 
 // Banner
 export const banner = (args?: string[]): string => {
@@ -181,8 +138,10 @@ export const banner = (args?: string[]): string => {
 ██╔══██╗ ██║    ██║   ██╔══██║ ██║ ╚════██║██╔══██║    ██║      ██║      ██║
 ██║  ██║ ██║    ██║   ██║  ██║ ██║ ███████║██║  ██║    ╚██████╗ ███████╗ ██║
 ╚═╝  ╚═╝ ╚═╝    ╚═╝   ╚═╝  ╚═╝ ╚═╝ ╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝ ╚═╝
-Type 'help' to navigate through my skills, projects, and commands.
-See a quick overview of me with 'sumfetch'.
-Check out my work on Github by typing 'repo' or clicking <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u>.
+
+AWS Cloud & DevOps Engineer | Terraform · Docker · ECS · Python
+Type 'help' to explore skills, experience, projects, and more.
+See a quick overview with 'sumfetch'.
+Check out my work on Github: <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u>.
 `;
 };
